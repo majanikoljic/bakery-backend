@@ -1,4 +1,3 @@
-// utils/logger.js
 
 const levels = {
   info: '\x1b[32m%s\x1b[0m',    // Green
