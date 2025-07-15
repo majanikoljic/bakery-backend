@@ -33,6 +33,7 @@ app.use(errorHandler);
 
 // Server Listener
 const PORT = process.env.PORT || 5001;
+console.log('PORT env var is:', process.env.PORT);
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
