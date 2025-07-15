@@ -18,7 +18,8 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors({origin: ['https://majas-bakery-shop.netlify.app/']}));
+app.use(cors({origin: 'https://majas-bakery-shop.netlify.app/', credentials: true}));
+app.options('*', cors());
 app.use(express.json()); // Parse JSON body
 app.use(morgan('dev'));  // Log HTTP requests
 
