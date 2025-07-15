@@ -1,6 +1,6 @@
 import Order from '../models/Order.js';
 
-// @desc    Create a new order
+// @desc    new order
 // @route   POST /api/orders
 // @access  Public
 const createOrder = async (req, res) => {
